@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<title>demo class2context.js</title>
+
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="class2context.png">
+
+<link rel='StyleSheet' type='text/css' href='class2context.css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style>
+body{
+    font-family: 'Roboto', sans-serif;
+    /*font-size: 48px;*/
+}
+.box1{
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    display: inline-block;
+    /*border: 2px solid #000000;*/
+    border-radius: 5px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px;
+
+}
+.box1:hover{
+    box-shadow: 0 5px 10px #BEF7F2;
+}
+.box2{
+    width: 600px;
+    min-height: 300px;
+    margin: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px;
+
+}
+.centralBox{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.codeFont{
+    color: #DAE8E8;
+}
+.heightMainBox{
+    height: 200px;
+}
+.mainimg{
+    width: 100px;
+    display: inline-block;
+    transition: all .5s;
+    top:0;
+    vertical-align:top;
+}
+.mainimg:hover{
+    width:150px;
+    transition: all .2s;
+}
+</style>
+
+
+
+</head>
+<body onload="">
+
+<div class='container'>
+    <div class="classHeader centralBox">
+        <h1><img src='class2context.png' width='100px' />class2context.js</div>
+    </div>
+    <br><br>
+    <div class='centralBox heightMainBox'>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Configurable!">
+            <img src='http://image.flaticon.com/icons/svg/167/167516.svg' class='mainimg' />
+        </a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="High performance!">
+            <img src='http://image.flaticon.com/icons/svg/167/167479.svg' class='mainimg' />
+        </a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Permits increment functionallities!">
+            <img src='http://image.flaticon.com/icons/svg/167/167486.svg' class='mainimg' />
+        </a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Multiple platform!">
+            <img src='http://image.flaticon.com/icons/svg/167/167488.svg' class='mainimg' />
+        </a>
+    </div>
+    <div class='centralBox'>
+        <div class='class1 box1' style='background: #0FA3B1;'>
+            <h4>A</h4>
+            This is a demo
+            <br>
+            Just need to include the files:
+            <ul>
+                <li>class2context.js</li>
+                <li>class2context.css</li>
+            </ul>
+        </div>
+        <div class='class2 box1' style='background: #FF9B42;'>
+            <h4>Get started!</h4>
+            Right click over me!
+            <div class='classSub2 box1' style='background: #5797CC; width: 130px; height: 180px!important;'>
+                element inside element with diferent class
+            </div>
+        </div>
+        <div class='class3 box1' style='background: #8BC34A;'>
+            <h4>Use</h4>
+            when html is charged, call the function
+        </div>
+        <div class='class4 box2' style='background: #9375A3;'>
+            <h4>Use</h4>
+            when html is charged, call the function:<br>
+            <div class='codeFont'>
+                <b>class2context</b>(
+                <br> 'className',
+                <br> "title",
+                <br> [["option1", "functionoption1()"], ["option 2","functionoption2()"]]
+                <br>);
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<br><br><br><br>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script src='class2context.js'></script>
+
+<script>
+
+array=[["<img src='http://icons.iconarchive.com/icons/designbolts/free-multimedia/1024/iMac-icon.png' width='25px' /> A1", "function1()"], ["<img src='http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/Autodesk-Alias-Design-icon.png' width='25px' /> A2","function2()"]];
+class2context('class1', "titleA", array);
+class2context('class3', "titleC", [["<img src='http://icons.iconarchive.com/icons/iynque/flurry-extras-8/32/123D-Design-icon.png' width='25px' /> C1", "function1()"], ["<img src='http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/32/Actions-draw-brush-icon.png' width='25px' /> C3","function3()"]]);
+class2context('class2', "titleB", [["<img src='http://icons.iconarchive.com/icons/custom-icon-design/flatastic-6/32/3d-material-drop-tool-icon.png' width='25px' /> B2", "function2()"], ["<img src='http://icons.iconarchive.com/icons/iynque/ios7-style/32/Design-Briefs-icon.png' width='25px' /> B3","function3()"]]);
+
+class2context("classHeader", "titleTableMenu", [["header function 1", "function1()"], ["header function 2", "function2()"]]);
+
+class2context('class4',"title",[["option1", "function1()"], ["option 2","function2()"]]);
+class2context('mainimg', "Image context menu", [["<img src='http://icons.iconarchive.com/icons/iynque/flurry-extras-8/32/123D-Design-icon.png' width='25px' /> C1", "function1()"], ["<img src='http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/32/Actions-draw-brush-icon.png' width='25px' /> C3","function3()"]]);
+
+class2context('classSub2', "sub element context inside other element", [["<img src='http://icons.iconarchive.com/icons/iynque/flurry-extras-8/32/123D-Design-icon.png' width='25px' /> C1", "function1()"]]);
+
+function function1(){
+    alert("function 1 clicked");
+}
+function function2(){
+    alert("function 2 clicked");
+}
+function function3(){
+    alert("function 3 clicked");
+}
+function ContextMenus(){
+    console.log("context menu called");
+}
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</body>
+</html>
