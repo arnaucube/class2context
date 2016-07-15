@@ -4,6 +4,10 @@ javascript library, to add context menu functionallity to html page
 Demo: class2context_DEMO.html
 
 
+![Alt text](https://raw.githubusercontent.com/idoctnef/class2context/master/demoScreen.png "downlad and open the demo to test it")
+
+
+
 ### Usage
 First, include the files
 ```html
