@@ -12,7 +12,30 @@ class2context(
 );
 */
 
+/* testing this, not necessary
+$( document ).ready(function() {
+    $(document).on('contextmenu', function (e) {
+        //e.preventDefault();
+        ContextMenus();
+    });
+});*/
 
+
+/* MUTATION OBSERVER
+--detect changes in dom, and re-asign context menus*/
+// select the target node //MUTATION DOM
+var target = document.body;
+var mutNum=0;
+var observer = new MutationObserver(function(mutations) {
+	console.log("class2context.js: mutation of dom, num." + mutNum);
+	mutNum++;
+    ContextMenus();
+});
+// configuration of the observer:
+var config = { attributes: true, childList: true, characterData: true };
+// pass in the target node, as well as the observer options
+observer.observe(target, config);
+/* </MUTATION OBSERVER */
 
 
 //creates the div where the context menus will place
