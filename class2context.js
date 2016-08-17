@@ -12,13 +12,24 @@ class2context(
 );
 */
 
-/* testing this, not necessary
+/* testing this, not necessary */
+var cmCallNum=0;
 $( document ).ready(function() {
     $(document).on('contextmenu', function (e) {
         //e.preventDefault();
+        /*//testing only
+        console.log('ContextMenus() called, num.' + cmCallNum);
+        cmCallNum++;*/
         ContextMenus();
     });
-});*/
+    $(document).on('click', function (e) {
+        //e.preventDefault();
+        /*//testing only
+        console.log('ContextMenus() called, num.' + cmCallNum);
+        cmCallNum++;*/
+        ContextMenus();
+    });
+});
 
 
 /* MUTATION OBSERVER
