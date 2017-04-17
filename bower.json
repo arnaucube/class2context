@@ -1,0 +1,29 @@
+{
+  "name": "class2context",
+  "description": "javascript library, to add context menu functionallity to html page",
+  "main": [
+    "class2context.js",
+    "class2context.css"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "class",
+    "context",
+    "menu"
+  ],
+  "authors": [
+    {"name": "Arnau Code", "homepage": "http://arnaucode.com"}
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "demo",
+    "*.gif",
+    "*.png"
+  ],
+  "private": false
+}
